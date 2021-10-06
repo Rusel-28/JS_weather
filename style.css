@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(163, 161, 161);
+}
+
+.bloc {
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: rgb(145, 142, 142);
+    box-shadow: 14px 11px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 600px;
+    width: 1 1;
+    border-radius: 10px;
+    border: solid #333 2px;
+}
+
+button {
+    outline: none;
+    border: none;
+    position: relative;
+    background-color: rgb(145, 142, 142);
+    border-radius: 10px;
+}
+
+#clock,
+#day {
+    color: white;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.price {
+    color: white;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+}
+
+.icon img {
+    width: 30px;
+}
+
+@media (max-width:1024px) {
+    .bloc {
+        margin-top: 40px;
+    }
+    #clock,
+    #day {
+        font-size: 70px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:500px) {
+    .bloc {
+        margin-top: 25px;
+    }
+    #clock,
+    #day {
+        font-size: 60px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:350px) {
+    .bloc {
+        margin-top: 20px;
+    }
+    #clock,
+    #day {
+        font-size: 50px;
+        padding: 8px;
+    }
+}
